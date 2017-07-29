@@ -1,0 +1,44 @@
+思路：用crontab定时执行main.py生成tmp.mp3
+      用crontab定时执行playmp3.sh播放tmp.mp3
+      （利用两个任务的时间差进行就可以）
+
+1、安装python3
+sudo apt-get install build-essential libsqlite3-dev sqlite3 bzip2 libbz2-dev libssl-dev openssl libgdbm-dev liblzma-dev libreadline-dev libncursesw5-dev
+#安装依赖包
+wget https://www.python.org/ftp/python/3.6.1/Python-3.6.1.tgz
+#下载源码包
+tar zxf Python-3.6.1.tgz
+#解压
+cd Python-3.6.1/
+./configure --prefix=/usr/loacl/python3
+make
+sudo make install
+#echo $?如果是0就是正确的，如果是
+sudo ln -s /usr/local/python3/bin/python3 /usr/bin/python3
+sudo ln -s /usr/local/python3/bin/pip3 /usr/bin/pip3
+
+
+2、安装所需要的库
+sudo pip3 install requests
+sudo pip3 install beautifulsoup4
+sudo pip3 install wxpy
+#服了，装了个库都要sudo
+#上面几个都正常的
+#下面这个遇到错误了
+sudo pip3 install baidu-aip
+
+3、
+tips:
+apt-get简单命令：
+apt-get install xxxx 安装
+apt-get remove xxxx 卸载但不删除配置
+apt-get purge xxxx 卸载并且删除相关配置
+
+cron计划任务:
+crontab -u usersname -l 列出用户的定时任务
+crontab -u usersname -e 编辑用户的定时任务
+进入编辑
+# * *  * *  * user-name command to be executed
+分钟 小时 天 月 周
+cron 也是一个服务，需要先启动服务才能生效：service crond start; service crond status 
+执行的日志在什么地方：/var/log/cron
