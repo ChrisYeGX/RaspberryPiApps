@@ -40,7 +40,6 @@ def makeSoup(html):
 				wstr = wstr +i
 		if '雨' in wstr:
 			wstr += '今天别忘记带雨伞哦！'
-		#加入一些比叫人性化的词语
 		#print(wstr)
 		return wstr
 	except:
