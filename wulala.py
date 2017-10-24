@@ -19,7 +19,9 @@ def getHtmlText(url,code='utf-8'):
 		return ''
 def makeSoup(html):
 	wstr = ''
-	try:
+	if html == '':
+		return '哎呀~今天我也不知道无锡天气了'
+	else:
 		soup = BeautifulSoup(html,'html.parser')
 		soup1 = soup.find_all('li',attrs = {'class':'on'})[1]
 		str1 = re.findall(r'>(.*)</',str(soup1))
@@ -42,17 +44,15 @@ def makeSoup(html):
 			wstr += '今天别忘记带雨伞哦！'
 		#print(wstr)
 		return wstr
-	except:
-		return '哎呀~今天我也不知道无锡天气了'
 '''
 用百度的AIP
 把文字变成mp3文件
 '''
 def stringToMp3(strings_txt):
-	strings_txt = '起床呀~辣鸡~起床啊~辣鸡~起床啦~辣鸡~今天是' + strings_txt
-	APPID = '9938968'
-	APIKey = 'QCV3ZhkXUK70ofAe1nPjbgbb'
-	SecretKey = 'e80a19172d6206f84714925c9bca2b56'
+	strings_txt = '起床呀~懒虫~起床啊~死肥宅~起床啦~要上班啦！今天是' + strings_txt
+	APPID = '9***3**8'
+	APIKey = 'QC*****UK*****nP***b'
+	SecretKey = 'e8***6******25*****56'
 
 	aipSpeech = AipSpeech(APPID,APIKey,SecretKey)
 	result = aipSpeech.synthesis(strings_txt,'zh','1',\
