@@ -22,7 +22,6 @@ sudo ln -s /usr/local/python3/bin/pip3 /usr/bin/pip3
 sudo pip3 install requests
 sudo pip3 install beautifulsoup4
 sudo pip3 install wxpy
-#服了，装了个库都要sudo
 #上面几个都正常的
 #下面这个遇到错误了
 sudo pip3 install baidu-aip
