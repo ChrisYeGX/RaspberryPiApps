@@ -1,7 +1,7 @@
 树莓派设置wifi
 
 1、wifi启动设置：
-sudoprp vim /etc/network/interfaces
+sudo vim /etc/network/interfaces
  修改如下（只关于wlan0）:
 
 iface wlan0 inet dhcp
