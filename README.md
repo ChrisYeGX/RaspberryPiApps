@@ -3,12 +3,12 @@
 ## 简单的语音天气闹钟⏰:
 [SimpleClock](./SimpleClock):
 - 简单描述
-> 利用天气API与百度语音API生成MP3文件 os.system执行,使用contrab调用执行播放mp3文件就好了
+> 利用天气API与百度语音API生成MP3文件 os.system执行,使用contrab调用执行播放mp3文件就好了
 - 项目细节
 我还在树莓派实验室上投稿了此[项目](http://shumeipai.nxez.com/2017/10/27/crontab-and-raspberry-pi-voice-alarm-clock.html),具体的过程去看看吧。(因为写的比较久远了，有很多的问题，最近想更新一下)
 - ️️️️⚠️警告
-我后来更新了这个代码,所以上面👆的投稿的内容不是很准确。等段时间整理md！！
-- 更新之后的使用方法 - - - - - 如下:
+我后来更新了这个代码,所以上面👆的投稿的内容不是很准确。等段时间整理md！！
+- 更新之后的使用方法 - - - - - 如下:
 ### 安装mplayer
 sudo apt-get update
 sudo apt-get install mplayer2
