@@ -29,9 +29,9 @@ class Clock():
 		把文字变成mp3文件
 		'''
 		strings_txt = '起床呀~要迟到啦!起床啦~要上课啦！今天是' + strings_txt
-		APPID = '11298616'
-		APIKey = 'BwXtHeNNk5mp25twaoZWVKXq'
-		SecretKey = '426106fa83642b4dce997c482aed9bf9'
+		APPID = '[百度语音APPID]'
+		APIKey = '[百度语音APIKey]'
+		SecretKey = '[百度语音SecretKey]'
 
 		aipSpeech = AipSpeech(APPID,APIKey,SecretKey)
 		result = aipSpeech.synthesis(strings_txt,'zh','1',\
