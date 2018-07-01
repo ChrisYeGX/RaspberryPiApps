@@ -3,12 +3,10 @@
 1、wifi启动设置：
 sudo vim /etc/network/interfaces
  修改如下（只关于wlan0）:
-
-iface wlan0 inet dhcp
-#iface wlan0 inet manual
+auto wlan0
+allow-hotplug wlan0
+iface wlan0 inet manual
 wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
-
-保存退出com：:x
 
 2、wifi密码的设置：
  vim /etc/wpa_supplicant/wpa_supplicant.conf
@@ -16,11 +14,13 @@ wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
  所有的WiFi连接配置都在这里了：
  #最常用的配置。WPA-PSK 加密方式。
   network={
-  ssid="WiFi-name1"
-  psk="WiFi-password1"
-  priority=5
-  }
+        ssid="CMCC-ecV6"
+        psk="5tk2m2bq"
+        key_mgmt=WPA-PSK
+        priority=5
+}
  *priority 是指连接优先级，数字越大优先级越高（不可以是负数）。
+
 3、设置静态ip
   vim /etc/dhcpcd.conf
   添加无线网络的固定IP，则添加如下内容：
