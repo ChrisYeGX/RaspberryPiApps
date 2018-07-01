@@ -18,7 +18,7 @@ sudo apt-get install mplayer2
 ```python
 pip3 install requests
 pip3 install baidu-aip
-# 如果安装不成功建议去看投稿上有写
+# 如果安装不成功建议去看投稿上有写
 ```
 ### 最后设置定时运行
 > 首先看时区（中国的是CST）、时间对不对
@@ -38,7 +38,7 @@ git clone https://github.com/hyhmnn/raspberry
 ```
 
 ### 写入crontab
-> 都要使用绝对路径,具体crontab用法去百度
+> 都要使用绝对路径,具体crontab用法去百度
 
 ```shell
 crontab -e
