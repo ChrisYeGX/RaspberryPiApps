@@ -31,7 +31,7 @@ sudo dpkg-reconfigure tzdata
 # 时间不对：
 sudo ntpd -s -d
 ```
-### clone 此项目
+### clone 此项目
 ```shell
 cd ~
 git clone https://github.com/hyhmnn/raspberry
