@@ -10,8 +10,10 @@
 我后来更新了这个代码,所以上面👆的投稿的内容不是很准确。等段时间整理md！！
 - 更新之后的使用方法 - - - - - 如下:
 ### 安装mplayer
+```shell
 sudo apt-get update
 sudo apt-get install mplayer2
+```
 ### 安装python3
 > 网上很多
 ### 安装依赖库
