@@ -4,6 +4,9 @@ sudo raspi-config
 ```
 设置wifi
 
+# scp简单使用
+scp pi@192.168.1.12:/home/pi/image.jpg ./
+
 # 树莓派配置wifi
 
 - wifi启动设置：
