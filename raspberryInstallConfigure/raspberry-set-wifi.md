@@ -1,3 +1,9 @@
+# 最简单的办法
+```shell
+sudo raspi-config
+```
+设置wifi
+
 # 树莓派配置wifi
 
 - wifi启动设置：
