@@ -1,1 +1,15 @@
 pip install werobot -i https://pypi.tuna.tsinghua.edu.cn/simple
+
+
+
+1.进入到系统的语言配置页面
+
+   sudo raspi-config
+ 
+2.在像 BIOS 界面的界面中依次进行操作
+
+  空格操作勾选/取消勾选，tab 跳转到[确定，取消]选择区域
+
+3.选择 Localisation Options
+  选择 Change Locale
+  取消勾选 en_GB.UTF-8 UTF-8，勾选 en_US.UTF-8, zh_CN.UTF-8 UTF-8, zh_CN.GBK GBK
